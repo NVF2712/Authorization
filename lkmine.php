@@ -79,7 +79,7 @@
 			});
       if (save_buttons[i].hidden) {
         save_buttons[i].addEventListener("click", () => {
-				//inputValue=document.getElementById(newValue).value; - не заработало так...
+				//inputValue=document.getElementById('newValue').value; - не заработало так...
 				save_buttons[i].hidden = true;
 				cancel_buttons[i].hidden = true;
 				edit_buttons[i].hidden = false;
@@ -87,6 +87,7 @@
       }
       if (cancel_buttons[i].hidden) {
         cancel_buttons[i].addEventListener("click", () => {
+				newValue.innerText=inputValue;
 				save_buttons[i].hidden = true;
 				cancel_buttons[i].hidden = true;
 				edit_buttons[i].hidden = false;
