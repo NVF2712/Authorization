@@ -79,7 +79,7 @@
 			});
       if (save_buttons[i].hidden) {
         save_buttons[i].addEventListener("click", () => {
-				inputValue=document.getElementById(newValue).value;
+				//inputValue=document.getElementById(newValue).value; - не заработало так...
 				save_buttons[i].hidden = true;
 				cancel_buttons[i].hidden = true;
 				edit_buttons[i].hidden = false;
